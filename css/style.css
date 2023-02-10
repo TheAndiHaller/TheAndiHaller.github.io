@@ -9,7 +9,7 @@
         --navbar-bg-color: hsl(0, 0%, 15%);
         --navbar-text-color: hsl(0, 0%, 85%);
         --navbar-text-color-focus: white;
-        --navbar-bg-contrast: hsl(0, 0%, 25%);
+        --navbar-bg-contrast: rgba(255, 255, 255, 0.95);
 }
 
 body {
@@ -26,6 +26,7 @@ body.day-background {
 	--background-color: #212529;
 	--text-color: #F8F8F2;
         --navbar-resume-btn-bg: rgba(255, 255, 255, 0.2); 
+        --navbar-bg-contrast: rgba(33, 37, 41, 0.95);
 }
 /* Dark Mode colors
  * 212529  dark gray - background
@@ -57,7 +58,7 @@ body.day-background {
   justify-content: center;
   width: 100%;
   padding: 0.4em 0.8em;
-  padding-left: 100px;
+  padding-left: 50px;
   border-radius: 5px;
 
 }
@@ -107,9 +108,8 @@ body.day-background {
 }
 
 .resume-link {
-        border-radius: 1rem;
-        border: 0.125rem solid var(--text-color);
-        transition: all 0.3s ease-in-out 0s;
+  border: none;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .resume-link:is(:focus, :hover) {
@@ -200,40 +200,15 @@ body.day-background {
   margin: 1.4rem;
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  background-color: var(--navbar-bg-contrast);
 }
 
 #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
   padding: 1em;
 }
-@media screen and (min-width: 700px) {
-  #navbar-toggle,
-  #navbar-toggle[aria-expanded="true"] {
-    display: none;
-  }
-
-  #navbar-menu,
-  #navbar-toggle[aria-expanded="true"] #navbar-menu {
-    visibility: visible;
-    opacity: 1;
-    position: static;
-    display: block;
-    height: 100%;
-  }
-
-  .navbar-links,
-  #navbar-toggle[aria-expanded="true"] #navbar-menu .navbar-links {
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
-    position: static;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-  }
-}
 
 .presentation-container {
-  margin: 8em;
+  margin: 2em;
 }
 
 .presentation-titles {
@@ -278,25 +253,68 @@ h3 {
   background-color:var(--navbar-resume-btn-bg);
 }
 
+.aboutme-container {
+  margin-left: 2em;
+  margin-right: 2em;
+  max-width: 500px;
+}
+
+.aboutme-text {
+  font-size: 18px;
+}
 
 
 
 
 
+@media screen and (min-width: 700px) {
+  #navbar-toggle,
+  #navbar-toggle[aria-expanded="true"] {
+    display: none;
+  }
+
+  #navbar-menu,
+  #navbar-toggle[aria-expanded="true"] #navbar-menu {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    display: block;
+    height: 100%;
+  }
+
+  .navbar-links,
+  #navbar-toggle[aria-expanded="true"] #navbar-menu .navbar-links {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    position: static;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  .presentation-container {
+    margin: 8em;
+  }
+  
+    .aboutme-container {
+    margin-left: 8em;
+    margin-right: 8em;
+    max-width: 500px;
+  }
+  
+.resume-link {
+  border-radius: 1rem;
+  border: 0.125rem solid var(--text-color);
+  transition: all 0.3s ease-in-out 0s;
+}
 
 
+.nav-button {
+  padding: 0.4em 0.8em;
+  padding-left: 100px;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
