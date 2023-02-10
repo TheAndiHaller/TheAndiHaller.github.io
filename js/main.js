@@ -1,9 +1,20 @@
 // Dark Light switch
 const switchModeBtn = document.getElementById("cb1");
 const body = document.body;
+const btnIcon = document.getElementById("nav-button-icon");
 
 switchModeBtn.addEventListener("click", function() {
-	body.classList.toggle("day-background");
+  body.classList.toggle("day-background");
+  //btnIcon.classList.toggle("bx bx-moon bx-spin");
+  console.log(btnIcon.classList.contains("bx-sun"));
+  if (btnIcon.classList.contains("bx-sun")) {
+    btnIcon.classList.remove("bx-sun");
+    btnIcon.classList.add("bx-moon");
+  } else {
+    btnIcon.classList.remove("bx-moon");
+    btnIcon.classList.add("bx-sun");
+
+  }
 });
 
 // Navbar

@@ -3,6 +3,9 @@
 :root {
 	--background-color: #F8F8F2;
 	--text-color: #212529;
+        --navbar-resume-btn-bg: rgba(0, 0, 0, 0.1); 
+        
+
         --navbar-bg-color: hsl(0, 0%, 15%);
         --navbar-text-color: hsl(0, 0%, 85%);
         --navbar-text-color-focus: white;
@@ -22,14 +25,15 @@ body {
 body.day-background {
 	--background-color: #212529;
 	--text-color: #F8F8F2;
+        --navbar-resume-btn-bg: rgba(255, 255, 255, 0.2); 
 }
 /* Dark Mode colors
  * 212529  dark gray - background
  *
  *
  * Light mode colors
- * F8F8F2
- *
+ * F8F8F2 white 
+ * FEE440 yellow
  *
  *
  * */
@@ -40,9 +44,26 @@ body.day-background {
   margin-left: auto;
   margin-right: auto;
 }
+
+.nav-button {
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  text-decoration: none;
+  display: flex;
+  font-weight: 800;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.4em 0.8em;
+  padding-left: 100px;
+  border-radius: 5px;
+
+}
+
 #navbar {
   --navbar-height: 64px;
-  position: fixed;
   height: var(--navbar-height);
   left: 0;
   right: 0;
@@ -66,20 +87,33 @@ body.day-background {
   font-weight: 800;
   font-size: 20px;
   align-items: center;
+  transition: all 500ms;
+  
+}
+
+.home-link {
+  font-size: 24px;
+  margin-top: 0.4em;
+}
+
+.home-link:is(:focus, :hover) {
+  font-size: 25px;
+  text-shadow: 2px 2px 5px var(--navbar-resume-btn-bg);
+  
 }
 
 .resume-li {
-        padding-left: 50px;
-        padding-right: 20%;
+  padding: 0.4em 0.8em;
 }
 
 .resume-link {
         border-radius: 1rem;
         border: 0.125rem solid var(--text-color);
+        transition: all 0.3s ease-in-out 0s;
 }
 
-.home-link:is(:focus, :hover) {
-  color: var(--navbar-text-color-focus);
+.resume-link:is(:focus, :hover) {
+  background-color:var(--navbar-resume-btn-bg);
 }
 
 .navbar-link {
@@ -89,16 +123,26 @@ body.day-background {
   border-radius: 5px;
 }
 
-.navbar-link:is(:focus, :hover) {
-  color: var(--navbar-text-color-focus);
-  background-color: var(--navbar-bg-contrast);
+.navbar-link-text {
+  position: relative;
 }
-.navbar-logo {
-  background-color: var(--navbar-text-color-focus);
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  margin-right: 0.5em;
+
+.navbar-link-text:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--text-color);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-link-text:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
 }
 #navbar-toggle {
   cursor: pointer;
@@ -117,9 +161,6 @@ body.day-background {
   height: 4px;
   margin: 2px;
   background-color: var(--text-color);
-}
-#navbar-toggle:is(:focus, :hover) .icon-bar {
-  background-color: var(--navbar-text-color-focus);
 }
 #navbar-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
   position: absolute;
@@ -145,7 +186,6 @@ body.day-background {
   right: 0;
 }
 #navbar-toggle[aria-expanded="true"] + #navbar-menu {
-  background-color: rgba(0, 0, 0, 0.4);
   opacity: 1;
   visibility: visible;
 }
