@@ -1,43 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@499&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 
 :root {
-	--background-color: #F8F8F2;
-	--text-color: #212529;
-        --navbar-resume-btn-bg: rgba(0, 0, 0, 0.1); 
-        
+  --background-color: #f8f8f2;
+  --text-color: #212529;
+  --navbar-resume-btn-bg: rgba(0, 0, 0, 0.1);
 
-        --navbar-bg-color: hsl(0, 0%, 15%);
-        --navbar-text-color: hsl(0, 0%, 85%);
-        --navbar-text-color-focus: white;
-        --navbar-bg-contrast: rgba(255, 255, 255, 0.95);
+  --navbar-bg-color: hsl(0, 0%, 15%);
+  --navbar-text-color: hsl(0, 0%, 85%);
+  --navbar-text-color-focus: white;
+  --navbar-bg-contrast: rgba(255, 255, 255, 0.95);
 }
 
 body {
-	height: 100%;
-	-webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        background-color: var(--background-color);
-	color: var(--text-color);
-        -webkit-transition: background-color 150ms ease-out !important;
-        transition: background-color 150ms ease-out !important;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  -webkit-transition: background-color 150ms ease-out !important;
+  transition: background-color 150ms ease-out !important;
+  margin: 0;
+  font-family: "Share Tech mono", sans-serif;
+  font-family: "Ubuntu mono", sans-serif;
+  font-family: "IBM Plex Mono", monospace; /* likeee likeeee*/
 }
 
 body.day-background {
-	--background-color: #212529;
-	--text-color: #F8F8F2;
-        --navbar-resume-btn-bg: rgba(255, 255, 255, 0.2); 
-        --navbar-bg-contrast: rgba(33, 37, 41, 0.95);
+  --background-color: #212529;
+  --text-color: #f8f8f2;
+  --navbar-resume-btn-bg: rgba(255, 255, 255, 0.2);
+  --navbar-bg-contrast: rgba(33, 37, 41, 0.95);
 }
-/* Dark Mode colors
- * 212529  dark gray - background
- *
- *
- * Light mode colors
- * F8F8F2 white 
- * FEE440 yellow
- *
- *
- * */
+
+.main-container {
+  max-width: 1000px;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.presentation-container {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.presentation-right {
+  align-items: end;
+}
+
+.footer-container {
+  width: 100%;
+  padding-top: 150px;
+}
+
+.footer-content {
+  background-color: var(--background-color);
+  height: 120px;
+  width: 100%;
+}
+
 .container {
   max-width: 1000px;
   padding-left: 1.4rem;
@@ -60,7 +88,28 @@ body.day-background {
   padding: 0.4em 0.8em;
   padding-left: 50px;
   border-radius: 5px;
+}
 
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 200px));
+  font-size: 18px;
+  font-weight: 550;
+  list-style: none;
+  padding: 10px;
+}
+
+.skills-container li {
+  padding: 3px;
+}
+
+.move-left:hover {
+  color: yellow;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.skill-text {
+  color: var(--text-color);
 }
 
 #navbar {
@@ -89,7 +138,6 @@ body.day-background {
   font-size: 20px;
   align-items: center;
   transition: all 500ms;
-  
 }
 
 .home-link {
@@ -100,7 +148,6 @@ body.day-background {
 .home-link:is(:focus, :hover) {
   font-size: 25px;
   text-shadow: 2px 2px 5px var(--navbar-resume-btn-bg);
-  
 }
 
 .resume-li {
@@ -113,7 +160,7 @@ body.day-background {
 }
 
 .resume-link:is(:focus, :hover) {
-  background-color:var(--navbar-resume-btn-bg);
+  background-color: var(--navbar-resume-btn-bg);
 }
 
 .navbar-link {
@@ -207,17 +254,17 @@ body.day-background {
   padding: 1em;
 }
 
-.presentation-container {
-  margin: 2em;
-}
-
-.presentation-titles {
-  margin: 5px;
-}
-
 h1 {
   font-size: 60px;
   font-weight: 800;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.h1-smaller {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0px;
 }
 
 h2 {
@@ -228,34 +275,39 @@ h2 {
 h3 {
   font-size: 30px;
   font-weight: 800;
+  margin: 0px;
+  margin-bottom: 2rem;
+}
+
+.social-btn-container {
+  position: fixed;
+  width: 40px;
+  bottom: 50%;
+  left: 80px;
+  right: auto;
+  display: block;
 }
 
 .social-link-btn {
   background: transparent;
-  border-radius: 1rem;
-  border: 0.125rem solid var(--text-color);
-  transition: all 0.3s ease-in-out 0s;
+  border: none;
   color: var(--text-color);
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
-  padding: 0.4em 0.6em;
   border-radius: 5px;
-  margin: 10px;
-}
-
-.social-btn-container {
-  padding-top: 40px;
+  margin: 8px;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .social-link-btn:is(:focus, :hover) {
   cursor: pointer;
-  background-color:var(--navbar-resume-btn-bg);
+  background-color: var(--navbar-resume-btn-bg);
+  position: relative;
+  left: 6px;
 }
 
 .aboutme-container {
-  margin-left: 2em;
-  margin-right: 2em;
   max-width: 500px;
 }
 
@@ -263,11 +315,18 @@ h3 {
   font-size: 18px;
 }
 
+.avatar-container {
+  margin-top: 4rem;
+}
 
+.image-container {
+  width: 240px;
+  height: 240px;
+  border-radius: 20%;
+  overflow: hidden;
+}
 
-
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   #navbar-toggle,
   #navbar-toggle[aria-expanded="true"] {
     display: none;
@@ -294,27 +353,18 @@ h3 {
     background-color: transparent;
   }
 
+  .resume-link {
+    border-radius: 1rem;
+    border: 0.125rem solid var(--text-color);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .nav-button {
+    padding: 0.4em 0.8em;
+    padding-left: 30px;
+  }
+
   .presentation-container {
-    margin: 8em;
+    flex-direction: row;
   }
-  
-    .aboutme-container {
-    margin-left: 8em;
-    margin-right: 8em;
-    max-width: 500px;
-  }
-  
-.resume-link {
-  border-radius: 1rem;
-  border: 0.125rem solid var(--text-color);
-  transition: all 0.3s ease-in-out 0s;
-}
-
-
-.nav-button {
-  padding: 0.4em 0.8em;
-  padding-left: 100px;
-
-}
-
 }

@@ -1,63 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andi Haller</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/toggleSwitch.css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/toggleSwitch.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body class="day-background" >
+  <body class="day-background">
     <header id="navbar">
-        <nav class="navbar-container container">
-            <a href="/" class="home-link">
-            TheAndiHaller
-            </a>
-            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-                <div id="navbar-menu" aria-labelledby="navbar-toggle">
-                    <ul class="navbar-links">
-                        <li class="navbar-item"><a class="navbar-link" href="/"><span class="navbar-link-text">Home</span></a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="/"><span class="navbar-link-text">Projects</span></a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="/"><span class="navbar-link-text">Blog</span></a></li>
-                        <li class="navbar-item resume-li"><a class="navbar-link resume-link" href="/">Resume</a></li>
-                        <li class="navbar-item"><button class="nav-button" id="cb1" ><i id="nav-button-icon" class='bx bx-sun bx-sm bx-spin-hover'></i></button></li>
-                    </ul>
-                </div>
-            </nav>
+      <nav class="navbar-container container">
+        <a href="/" class="home-link"> TheAndiHaller </a>
+        <button
+          type="button"
+          id="navbar-toggle"
+          aria-controls="navbar-menu"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="navbar-menu" aria-labelledby="navbar-toggle">
+          <ul class="navbar-links">
+            <li class="navbar-item">
+              <a class="navbar-link" href="/"
+                ><span class="navbar-link-text">Home</span></a
+              >
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="/"
+                ><span class="navbar-link-text">Projects</span></a
+              >
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="/"
+                ><span class="navbar-link-text">Blog</span></a
+              >
+            </li>
+            <li class="navbar-item resume-li">
+              <a class="navbar-link resume-link" href="/">Resume</a>
+            </li>
+            <li class="navbar-item">
+              <button class="nav-button" id="cb1">
+                <i
+                  id="nav-button-icon"
+                  class="bx bx-sun bx-sm bx-spin-hover"
+                ></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    </header>
-    <main>
-        <div class="presentation-container">
-            <h1 class="presentation-titles">Hi!</h1>
-            <h2 class="presentation-titles">I'm Andreas</h2>
-            <h3 class="presentation-titles">I am a Software Developer</h3>
-            <div class="social-btn-container">
-                <button class="social-link-btn" onclick="window.open('https://www.linkedin.com/in/andreas-haller-schade/')"><i class='bx bxl-linkedin bx-sm social-link-icon'></i>  LinkedIn</button>
-                <button class="social-link-btn" onclick="window.open('https://github.com/TheAndiHaller')"><i class='bx bxl-github bx-sm social-link-icon'></i>  GitHub</button>
-                <button class="social-link-btn" onclick="window.open('https://www.instagram.com/theandihaller/')"><i class='bx bxl-instagram bx-sm social-link-icon'></i>  Instagram</button>
-                <button class="social-link-btn" onclick="window.open('https://twitter.com/TheAndiHaller')"><i class='bx bxl-twitter bx-sm social-link-icon'></i>  Twitter</button>
+    <main class="main-container">
+      <div class="presentation-container">
+        <div class="presentation-left">
+          <h1 class="presentation-titles">
+            Hi! <span class="h1-smaller"> I'm Andreas</span>
+          </h1>
+          <h3 class="presentation-titles">and I'm a Software Developer</h3>
+          <div class="aboutme-container">
+            <p class="aboutme-text">
+              Having experience in diverse backgrouns such as
+              customer support, teaching programming, developing
+              firmware for IoT devices and educational robots
+              with Arduino, and also starting a 3D printing business.
+            </p>
+
+            <p class="aboutme-text">
+              Now, as a graduate of a full stack web dev bootcamp, I am focused
+              on taking my programming skills to the next level and landing my
+              first job in a tech company. My diverse background has given me a
+              unique perspective that allows me to approach challenges with
+              creativity and innovation, and I am excited to bring this mindset
+              to the world of software engineering.
+            </p>
+          </div>
+        </div>
+        <div class="presentation-right">
+          <div class="avatar-container">
+            <div class="image-container">
+              <img
+                alt="Avatar"
+                width="260"
+                height="260"
+                class="avatar"
+                src="https://avatars.githubusercontent.com/u/20804834?v=4"
+              />
             </div>
+          </div>
         </div>
-        <div class="aboutme-container">
-            <h3>A little about me</h3>
-            <p class="aboutme-text">Full Stack developer with a focus on Back-end, experienced in working with Node.js, React, Redux, MySQL, and other technologies. I have founded, co-founded, and worked on various technology startups where I served in leadership, software development, and teaching roles. Always eager to learn, face new challenges, and share knowledge with others.</p>
-        </div>
+      </div>
+      <div class="social-btn-container">
+        <button
+          aria-label="Linkedin"
+          class="social-link-btn"
+          onclick="window.open('https://www.linkedin.com/in/andreas-haller-schade/')"
+        >
+          <i class="bx bxl-linkedin bx-md social-link-icon"></i>
+        </button>
+        <button
+          class="social-link-btn"
+          onclick="window.open('https://github.com/TheAndiHaller')"
+        >
+          <i class="bx bxl-github bx-md social-link-icon"></i>
+        </button>
+        <button
+          class="social-link-btn"
+          onclick="window.open('https://www.instagram.com/theandihaller/')"
+        >
+          <i class="bx bxl-instagram bx-md social-link-icon"></i>
+        </button>
+        <button
+          class="social-link-btn"
+          onclick="window.open('https://twitter.com/TheAndiHaller')"
+        >
+          <i class="bx bxl-twitter bx-md social-link-icon"></i>
+        </button>
+      </div>
+      <div class="">
+        <h3>Skills</h3>
+        <ul class="skills-container">
+          <li class="move-left">
+            <i class="bx bx-right-arrow"></i
+            ><span class="skill-text"> Javascript</span>
+          </li>
+          <li class="move-left">
+            <i class="bx bx-right-arrow"></i
+            ><span class="skill-text"> React</span>
+          </li>
+          <li class="move-left">
+            <i class="bx bx-right-arrow"></i
+            ><span class="skill-text"> Redux</span>
+          </li>
+          <li class="move-left">
+            <i class="bx bx-right-arrow"></i
+            ><span class="skill-text"> Node.js</span>
+          </li>
+          <li class="move-left">
+            <i class="bx bx-right-arrow"></i
+            ><span class="skill-text"> Express</span>
+          </li>
+          <li class="move-left">
+            <i class="bx bx-right-arrow"></i
+            ><span class="skill-text"> Postgres</span>
+          </li>
+          <li class="move-left">
+            <i class="bx bx-right-arrow"></i
+            ><span class="skill-text"> Sequelize</span>
+          </li>
+          <li class="move-left">
+            <i class="bx bx-right-arrow"></i
+            ><span class="skill-text"> Scrum</span>
+          </li>
+          <li class="move-left">
+            <i class="bx bx-right-arrow"></i
+            ><span class="skill-text"> Git</span>
+          </li>
+          <li class="move-left">
+            <i class="bx bx-right-arrow"></i
+            ><span class="skill-text"> Linux</span>
+          </li>
+          <li class="move-left">
+            <i class="bx bx-right-arrow"></i><span class="skill-text"> C</span>
+          </li>
+          <li class="move-left">
+            <i class="bx bx-right-arrow"></i
+            ><span class="skill-text"> Python</span>
+          </li>
+          <li class="move-left">
+            <i class="bx bx-right-arrow"></i
+            ><span class="skill-text"> Java</span>
+          </li>
+        </ul>
+      </div>
+      <div class="projects-container"></div>
     </main>
-    <footer>
-
+    <footer class="footer-container">
+      <div class="footer-content">
+        <nav class="navbar-container container">
+          <a href="/" class="home-link">TheAndiHaller</a>
+        </nav>
+      </div>
     </footer>
 
-
-    <script src="js/main.js" ></script>
-</body>
-</html
+    <script src="js/main.js"></script>
+  </body>
+</html>
