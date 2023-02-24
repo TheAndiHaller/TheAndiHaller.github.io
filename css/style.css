@@ -28,6 +28,9 @@ body {
   font-family: "Share Tech mono", sans-serif;
   font-family: "Ubuntu mono", sans-serif;
   font-family: "IBM Plex Mono", monospace; /* likeee likeeee*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body.day-background {
@@ -61,6 +64,8 @@ body.day-background {
 .footer-container {
   width: 100%;
   padding-top: 150px;
+  margin-top: auto;
+
 }
 
 .footer-content {
