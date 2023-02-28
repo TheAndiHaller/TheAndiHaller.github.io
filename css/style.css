@@ -29,22 +29,15 @@ body.day-background {
   --navbar-resume-btn-bg: rgba(255, 255, 255, 0.2);
   --navbar-bg-contrast: rgba(33, 37, 41, 0.95);
 }
-.main-container {
-  max-width: 1000px;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .presentation-container {
-  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   -webkit-box-pack: justify;
   justify-content: space-between;
 }
 .presentation-right {
-  padding-left: 5rem;
+  padding-left: 10vw;
   align-items: end;
 }
 .footer-container {
@@ -84,7 +77,7 @@ body.day-background {
 }
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 180px));
+  grid-template-columns: repeat(2, minmax(100px, 180px));
   font-size: 16px;
   font-weight: 550;
   list-style: none;
@@ -233,19 +226,19 @@ body.day-background {
 }
 h1 {
   color: #e6c738;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 800;
   margin-top: 3rem;
   margin-bottom: 1rem;
   text-shadow: 1px 1px 2px #3a3939;
 }
 .h1-smaller {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 800;
   margin: 0;
 }
 h2 {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 800;
 }
 h3 {
@@ -258,7 +251,6 @@ h3 {
 }
 .social-btn-container {
   padding-top: 1rem;
-  padding-left: 4rem;
 }
 .social-link-btn {
   background: 0 0;
@@ -339,10 +331,11 @@ h3 {
   justify-content: center;
 }
 .project-image-wraper {
-  height: auto;
   margin-bottom: 20px;
 }
 .project-image {
+  max-height: 260px;
+  max-width: 70vw;
   border-radius: 20px;
   box-shadow: 0 0 10px var(--shadows);
 }
@@ -360,6 +353,16 @@ h3 {
 .project-link:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
+
+.project-image-big {
+  max-height: 450px;
+  max-width: 80vw;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--shadows);
+}
+
 @media screen and (min-width: 800px) {
   #navbar-toggle,
   #navbar-toggle[aria-expanded="true"] {
@@ -394,12 +397,12 @@ h3 {
     padding-left: 30px;
   }
   .presentation-container {
+    padding-top: 5rem;
     flex-direction: row;
   }
   .project-container {
     width: 100%;
     margin-bottom: 30px;
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -458,6 +461,9 @@ h3 {
     color: var(--text-color);
     text-decoration: none;
     max-width: 300px;
+  }
+  .skills-container {
+    grid-template-columns: repeat(3, minmax(100px, 180px));
   }
 }
 @media screen and (min-width: 1300px) {
