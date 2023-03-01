@@ -8,9 +8,11 @@ let language = localStorage.getItem("language");
 
 if (language) {
   updateText(language);
+  switchLanguageBtn.innerHTML = language === "es" ? "ES" : "EN";
 } else {
   language = getLanguage();
   updateText(language);
+  switchLanguageBtn.innerHTML = language === "es" ? "ES" : "EN";
 }
 
 if (theme) {
@@ -108,8 +110,16 @@ function updateText(language) {
     elements.forEach((el) => {
       const id = el.id; // get the ID of the current element
       if (id !== "html") {
-        const text = lang[id][language]; // get the appropriate translation for the current language
-        el.innerHTML = text; // update the text content of the current element
+        try {
+          const text = lang[id][language]; // get the appropriate translation for the current language
+          el.innerHTML = text; // update the text content of the current element
+        } catch (e) {
+          console.log("Error: No key found for: " + id);
+        }
+      }
+      if (id === "nav-btn-resume") {
+        const text = lang["resume-url"][language]; // get the appropriate translation for the current language
+        el.setAttribute("href", text); // update the text content of the current element
       }
     });
   }

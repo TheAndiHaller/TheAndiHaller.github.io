@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,21 +31,33 @@
           <ul class="navbar-links">
             <li class="navbar-item">
               <a class="navbar-link" href="/"
-                ><span class="navbar-link-text">Home</span></a
+                ><span id="nav-btn-home" class="navbar-link-text" lang
+                  >Home</span
+                ></a
               >
             </li>
             <li class="navbar-item">
               <a class="navbar-link" href="/projects"
-                ><span class="navbar-link-text">Projects</span></a
+                ><span id="nav-btn-projects" class="navbar-link-text" lang
+                  >Projects</span
+                ></a
               >
             </li>
             <li class="navbar-item">
               <a class="navbar-link" href="/blog"
-                ><span class="navbar-link-text">Blog</span></a
+                ><span id="nav-btn-blog" class="navbar-link-text" lang
+                  >Blog</span
+                ></a
               >
             </li>
             <li class="navbar-item resume-li">
-              <a class="navbar-link resume-link" href="/">Resume</a>
+              <a
+                id="nav-btn-resume"
+                class="navbar-link resume-link"
+                href="/"
+                lang
+                >Resume</a
+              >
             </li>
             <li class="navbar-item">
               <button class="nav-button" id="cb1">
@@ -54,6 +66,9 @@
                   class="bx bx-sun bx-sm bx-spin-hover"
                 ></i>
               </button>
+            </li>
+            <li class="navbar-item">
+              <button class="nav-button" id="switchLang">EN</button>
             </li>
           </ul>
         </div>
@@ -173,7 +188,7 @@
         </nav>
       </div>
     </footer>
-
+    <script src="/js/language.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>

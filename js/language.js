@@ -42,5 +42,13 @@ const lang = {
     "latestprojects-title": {
       "en": "Latest Projects",
       "es": "Proyectos recientes"
-    },    
+    },
+    "latestblog-title": {
+      "en": "Latest Blog Posts",
+      "es": "Publicaciones de Blog recientes"
+    },
+    "resume-url": {
+      "en": "https://github.com/TheAndiHaller/TheAndiHaller.github.io/raw/9abaf5bc7465f485172e0de72e0ae11a78a9dfb8/documents/Andreas%20Haller%20Full%20Stack%20Web%20Developer%20resume.pdf",
+      "es": "https://github.com/TheAndiHaller/TheAndiHaller.github.io/raw/9abaf5bc7465f485172e0de72e0ae11a78a9dfb8/documents/Andreas%20Haller%20Full%20Stack%20Web%20Developer%20CV.pdf"
+    },      
   }
