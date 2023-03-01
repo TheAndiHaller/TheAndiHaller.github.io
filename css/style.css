@@ -23,12 +23,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-body.day-background {
-  --background-color: #11161e;
-  --text-color: #eaebeb;
-  --navbar-resume-btn-bg: rgba(255, 255, 255, 0.2);
-  --navbar-bg-contrast: rgba(33, 37, 41, 0.95);
-}
 
 .presentation-container {
   display: flex;
@@ -58,6 +52,7 @@ body.day-background {
   margin-right: auto;
 }
 .nav-button {
+  cursor: pointer;
   background: 0 0;
   border: none;
   color: var(--text-color);
@@ -68,9 +63,7 @@ body.day-background {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 0.4em 0.8em;
-  padding-left: 50px;
-  border-radius: 5px;
+  margin-left: 10px;
 }
 .skills-main-container {
   padding-top: 3rem;
@@ -237,6 +230,11 @@ h1 {
   font-weight: 800;
   margin: 0;
 }
+.yellow-font {
+  color: #e6c738;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px #3a3939;
+}
 h2 {
   font-size: 35px;
   font-weight: 800;
@@ -391,10 +389,6 @@ h3 {
     border-radius: 1rem;
     border: 0.125rem solid var(--text-color);
     transition: all 0.3s ease-in-out 0s;
-  }
-  .nav-button {
-    padding: 0.4em 0.8em;
-    padding-left: 30px;
   }
   .presentation-container {
     padding-top: 5rem;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,7 +12,7 @@
     />
   </head>
 
-  <body class="day-background">
+  <body>
     <header id="navbar">
       <nav class="navbar-container container">
         <a href="/" class="home-link"> TheAndiHaller </a>
@@ -31,21 +31,33 @@
           <ul class="navbar-links">
             <li class="navbar-item">
               <a class="navbar-link" href="/"
-                ><span class="navbar-link-text">Home</span></a
+                ><span id="nav-btn-home" class="navbar-link-text" lang
+                  >Home</span
+                ></a
               >
             </li>
             <li class="navbar-item">
               <a class="navbar-link" href="/projects"
-                ><span class="navbar-link-text">Projects</span></a
+                ><span id="nav-btn-projects" class="navbar-link-text" lang
+                  >Projects</span
+                ></a
               >
             </li>
             <li class="navbar-item">
               <a class="navbar-link" href="/blog"
-                ><span class="navbar-link-text">Blog</span></a
+                ><span id="nav-btn-blog" class="navbar-link-text" lang
+                  >Blog</span
+                ></a
               >
             </li>
             <li class="navbar-item resume-li">
-              <a class="navbar-link resume-link" href="/">Resume</a>
+              <a
+                id="nav-btn-resume"
+                class="navbar-link resume-link"
+                href="/"
+                lang
+                >Resume</a
+              >
             </li>
             <li class="navbar-item">
               <button class="nav-button" id="cb1">
@@ -55,6 +67,9 @@
                 ></i>
               </button>
             </li>
+            <li class="navbar-item">
+              <button class="nav-button" id="switchLang">EN</button>
+            </li>
           </ul>
         </div>
       </nav>
@@ -63,19 +78,19 @@
     <main class="container">
       <div class="presentation-container">
         <div class="presentation-left">
-          <h1 class="presentation-titles">
-            Hi! <span class="h1-smaller"> I'm Andreas</span>
+          <h1 id="presentation-h1-hi" class="presentation-titles" lang>
+            Hi! I'm Andreas
           </h1>
-          <h3 class="presentation-titles">and I'm a Software Developer</h3>
           <div class="aboutme-container">
-            <p class="aboutme-text">
-              Having experience in diverse backgrouns such as customer support,
-              teaching programming, developing firmware for IoT devices and
-              educational robots with Arduino, and also starting a 3D printing
-              business.
+            <p id="aboutme-text-1" class="aboutme-text" lang>
+              I am a <span class="yellow-font">software developer</span> with a
+              passion for creating innovative and user-friendly solutions. I
+              have a diverse background in programming, machining, customer
+              service, education and entrepreneurship that has given me a broad
+              range of skills and experiences.
             </p>
 
-            <p class="aboutme-text">
+            <p id="aboutme-text-2" class="aboutme-text" lang>
               Now, as a graduate of a full stack web dev bootcamp, I am focused
               on taking my programming skills to the next level and landing my
               first job in a tech company. My diverse background has given me a
@@ -127,7 +142,7 @@
         </button>
       </div>
       <div class="skills-main-container">
-        <h3>Skills</h3>
+        <h3 id="skills-title" lang>Skills</h3>
         <ul class="skills-container">
           <li class="move-left">
             <i class="bx bx-right-arrow"></i
@@ -183,7 +198,7 @@
         </ul>
       </div>
       <div class="projects-main-container">
-        <h3>Latest Projects</h3>
+        <h3 id="latestprojects-title" lang>Latest Projects</h3>
         <div class="projects-container">
           <div class="project-container">
             <div class="project-details">
@@ -237,9 +252,7 @@
                 information about Countries. Has combined filters and lets you
                 add information.
               </p>
-              <a
-                class="project-link"
-                href="/projects/web/countries/"
+              <a class="project-link" href="/projects/web/countries/"
                 >Read More</a
               >
             </div>
@@ -258,9 +271,7 @@
       </div>
       <div class="projects-main-container">
         <h3>Latest Blog Posts</h3>
-        <div class="projects-container">
-
-        </div>
+        <div class="projects-container"></div>
       </div>
     </main>
     <footer class="footer-container">
@@ -270,7 +281,7 @@
         </nav>
       </div>
     </footer>
-
+    <script src="/js/language.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>
