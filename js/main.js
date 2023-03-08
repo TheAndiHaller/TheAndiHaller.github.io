@@ -6,13 +6,14 @@ let root = document.documentElement;
 let theme = localStorage.getItem("theme");
 let language = localStorage.getItem("language");
 
+
 if (language) {
   updateText(language);
-  switchLanguageBtn.innerHTML = language === "es" ? "ES" : "EN";
+  switchLanguageBtn.innerHTML = language === "es" ? "En&nbsp;|&nbsp;<strong><u>Es</u></strong>" : "<strong><u>En</u></strong>&nbsp;|&nbsp;Es";
 } else {
   language = getLanguage();
   updateText(language);
-  switchLanguageBtn.innerHTML = language === "es" ? "ES" : "EN";
+  switchLanguageBtn.innerHTML = language === "es" ? "En&nbsp;|&nbsp;<strong><u>Es</u></strong>" : "<strong><u>En</u></strong>&nbsp;|&nbsp;Es";
 }
 
 if (theme) {
@@ -64,12 +65,12 @@ switchLanguageBtn.addEventListener("click", function () {
     language = "en";
     updateText(language);
     localStorage.setItem("language", language);
-    switchLanguageBtn.innerHTML = "EN";
+    switchLanguageBtn.innerHTML = "<strong><u>En</u></strong>&nbsp;|&nbsp;Es";
   } else {
     language = "es";
     updateText(language);
     localStorage.setItem("language", language);
-    switchLanguageBtn.innerHTML = "ES";
+    switchLanguageBtn.innerHTML = "En&nbsp;|&nbsp;<strong><u>Es</u></strong>";
   }
 });
 

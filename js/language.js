@@ -16,8 +16,8 @@ const lang = {
     es: "Blog",
   },
   "nav-btn-resume": {
-    en: "Resume",
-    es: "CV",
+    en: "Resume &nbsp;<i class='bx bx-download'></i>",
+    es: "CV &nbsp;<i class='bx bx-download'></i>",
   },
   "presentation-h1-hi": {
     en: "Hi! I'm Andreas",
