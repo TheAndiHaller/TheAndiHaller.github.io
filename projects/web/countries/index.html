@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" id="html">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-02C11P9PQM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-02C11P9PQM");
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andi Haller</title>
     <link href="/css/style.css" rel="stylesheet" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
 
   <body class="day-background">
@@ -31,40 +39,25 @@
           <ul class="navbar-links">
             <li class="navbar-item">
               <a class="navbar-link" href="/"
-                ><span id="nav-btn-home" class="navbar-link-text" lang
-                  >Home</span
-                ></a
+                ><span id="nav-btn-home" class="navbar-link-text" lang>Home</span></a
               >
             </li>
             <li class="navbar-item">
               <a class="navbar-link" href="/projects"
-                ><span id="nav-btn-projects" class="navbar-link-text" lang
-                  >Projects</span
-                ></a
+                ><span id="nav-btn-projects" class="navbar-link-text" lang>Projects</span></a
               >
             </li>
             <li class="navbar-item">
               <a class="navbar-link" href="/blog"
-                ><span id="nav-btn-blog" class="navbar-link-text" lang
-                  >Blog</span
-                ></a
+                ><span id="nav-btn-blog" class="navbar-link-text" lang>Blog</span></a
               >
             </li>
             <li class="navbar-item resume-li">
-              <a
-                id="nav-btn-resume"
-                class="navbar-link resume-link"
-                href="/"
-                lang
-                >Resume</a
-              >
+              <a id="nav-btn-resume" class="navbar-link resume-link" href="/" lang>Resume</a>
             </li>
             <li class="navbar-item">
               <button class="nav-button" id="cb1">
-                <i
-                  id="nav-button-icon"
-                  class="bx bx-sun bx-sm bx-spin-hover"
-                ></i>
+                <i id="nav-button-icon" class="bx bx-sun bx-sm bx-spin-hover"></i>
               </button>
             </li>
             <li class="navbar-item">
@@ -89,10 +82,7 @@
         >
           <i class="bx bxl-linkedin bx-md social-link-icon"></i>
         </button>
-        <button
-          class="social-link-btn"
-          onclick="window.open('https://github.com/TheAndiHaller')"
-        >
+        <button class="social-link-btn" onclick="window.open('https://github.com/TheAndiHaller')">
           <i class="bx bxl-github bx-md social-link-icon"></i>
         </button>
         <button
@@ -101,10 +91,7 @@
         >
           <i class="bx bxl-instagram bx-md social-link-icon"></i>
         </button>
-        <button
-          class="social-link-btn"
-          onclick="window.open('https://twitter.com/TheAndiHaller')"
-        >
+        <button class="social-link-btn" onclick="window.open('https://twitter.com/TheAndiHaller')">
           <i class="bx bxl-twitter bx-md social-link-icon"></i>
         </button>
       </div>
@@ -114,8 +101,8 @@
         </p>
 
         <p id="countries-p-1" class="project-paragraph" lang>
-          This app uses the restcountries API to bring information from
-          countries and saves them in a PostgreSQL database.
+          This app uses the restcountries API to bring information from countries and saves them in
+          a PostgreSQL database.
         </p>
         <img
           alt="webpage"
@@ -123,13 +110,10 @@
           src="https://res.cloudinary.com/dzdh345nq/image/upload/v1677718869/git/Screenshot_from_2023-03-01_21-59-37_avdxxo.png"
         />
         <p id="countries-p-2" class="project-paragraph" lang>
-          The frontend is made with React and shows the list of countries. It
-          has paging, multiple combinable filters and the possibility of adding
-          tourist activities to each country.
+          The frontend is made with React and shows the list of countries. It has paging, multiple
+          combinable filters and the possibility of adding tourist activities to each country.
         </p>
-        <p id="countries-s-2" class="project-subtitle" lang>
-          Technologies used:
-        </p>
+        <p id="countries-s-2" class="project-subtitle" lang>Technologies used:</p>
         <p id="countries-p-3" class="project-paragraph" lang>
           Frontend: React + Redux + CSS <br />
           Backend: NodeJs + Express + Sequelize <br />
@@ -141,10 +125,10 @@
           src="https://res.cloudinary.com/dzdh345nq/image/upload/v1677718962/git/Screenshot_21_yuhp28.png"
         />
         <img
-        alt="webpage"
-        class="project-image-big"
-        src="https://res.cloudinary.com/dzdh345nq/image/upload/v1677718869/git/Screenshot_from_2023-03-01_21-59-55_kvyjjl.png"
-      />
+          alt="webpage"
+          class="project-image-big"
+          src="https://res.cloudinary.com/dzdh345nq/image/upload/v1677718869/git/Screenshot_from_2023-03-01_21-59-55_kvyjjl.png"
+        />
         <div class="project-links-container">
           <a
             class="project-link"
@@ -152,10 +136,7 @@
             href="https://github.com/TheAndiHaller/andiscountriesapp"
             >Github</a
           >
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://andiscountriesapp.vercel.app/"
+          <a class="project-link" target="_blank" href="https://andiscountriesapp.vercel.app/"
             >Website</a
           >
         </div>
