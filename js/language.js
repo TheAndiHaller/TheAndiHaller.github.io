@@ -144,12 +144,12 @@ const lang = {
     es: "Un robot impreso en 3D de código abierto creado con fines educativos con Arduino y microcontrolador ESP8266.",
   },
   "project-desc-fitness": {
-    en: "A WebApp created for the Bootcamp SoyHenry. This App seeks to improve the online interaction that a gym has with its customers.",
-    es: "Una WebApp creada para el Bootcamp SoyHenry. Esta aplicación busca mejorar la interacción en línea que un gimnasio tiene con sus clientes.",
+    en: "A WebApp created for the Bootcamp SoyHenry. This App seeks to improve the online interaction that a gym has with its customers. (Broken Heroku Backend).",
+    es: "Una WebApp creada para el Bootcamp SoyHenry. Esta aplicación busca mejorar la interacción en línea que un gimnasio tiene con sus clientes. (Backend en Heroku roto).",
   },
   "project-desc-countries": {
-    en: "Web App built with React, Redux, Nodejs and Sequelize that shows information about Countries. Has combined filters and lets you add information.",
-    es: "Web App construida con React, Redux, Nodejs y Sequelize que muestra información sobre países. Tiene filtros combinados y te permite agregar información.",
+    en: "Web App built with React, Redux, Nodejs and Sequelize that shows information about Countries. Has combined filters and lets you add information. (Broken Heroku Backend).",
+    es: "Web App construida con React, Redux, Nodejs y Sequelize que muestra información sobre países. Tiene filtros combinados y te permite agregar información. (Backend en Heroku roto).",
   },
   "read-more-btn-1": {
     en: "Read More",
@@ -162,6 +162,10 @@ const lang = {
   "read-more-btn-3": {
     en: "Read More",
     es: "Leer más",
+  },
+  "work-in-progress": {
+    en: "Work in progress.",
+    es: "Trabajo en progreso.",
   },
 };
 
